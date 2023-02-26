@@ -90,19 +90,19 @@ function Lessons() {
                         window.innerWidth <= 750 ?
                         <div className="Lessons-slide-wrapper">
                             <div className='Lessons-slide-grid'> 
-                                <img className='Lessons-slide-pictures' src={`${images[0]}`} width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[0]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
                                 <div className={'Lessons-slide-text-0'}>
                                     {texts[0]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[1]}`} width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[1]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
                                 <div className={'Lessons-slide-text-1'}>
                                     {texts[1]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[2]}`} width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[2]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
                                 <div className={'Lessons-slide-text-2'}>
                                     {texts[2]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[3]}`} width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[3]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
                                 <div className={'Lessons-slide-text-3'}>
                                     {texts[3]}
                                 </div>
@@ -114,7 +114,7 @@ function Lessons() {
                             <div className='button-prev'></div>
                             </div>
                             <div className='Lessons-slide-grid'> 
-                                <img className='Lessons-slide-pictures' src={`${images[currentIndex]}`} width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[currentIndex]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
                                 <div className={'Lessons-slide-text-' + currentIndex}>
                                     {texts[currentIndex]}
                                 </div>
