@@ -9,7 +9,7 @@ function Performances() {
                 <h1 className="Performances-header" id="Performances">
                     Performances
                 </h1>
-                    <img src="Performances.webp" className="Compositions-image" id="Performances-image"></img>
+                    <img className="Compositions-image" id="Performances-image"></img>
                     <div className="Performances-bio">
                         <p className="Performances-video-title" id="performance-1">Appassionata mvt. III, Beethoven</p>
                         <iframe className="Performances-video-1" width="56.5%" height="20%" src="https://www.youtube.com/embed/ZaSbHzfFpt4?rel=0&amp;showinfo=0&amp;rel=0" title="Sonata no.1 - Rebekah Shomsky" frameBorder="0" allow="fullscreen"></iframe>

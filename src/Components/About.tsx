@@ -1,9 +1,7 @@
-import React from "react";
-
 function About() {
     return (
         <div className="About" id="About">
-            <img src="waterfall-full.webp"className="About-image"></img>
+            <img className="About-image"></img>
                 <div className="About-bio">
                     <h1 className="About-header">About Me</h1>
                     <p>

@@ -9,7 +9,7 @@ function Compositions() {
                     </h1>
                 </h1>
                 <div className="Compositions-image">
-                    <img src="hshot6blackedit.webp" className="Compositions-image" id="compositions-image" loading="lazy"></img>
+                    <img className="Compositions-image" id="compositions-image" loading="lazy"></img>
                     <div className="Composition-bio">
                         <div className="Composition-bio-text">
                             I’ve been composing since I was a child. I started by writing dozens of hymn arrangements to play at my church, then over time branched out into writing for ensembles. I mostly compose for piano – both original works and arrangements of existing songs. Much of my music is inspired by nature.
