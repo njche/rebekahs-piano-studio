@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# SideBar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portrait
+Navigator
+Social Links
+Email
 
-## Available Scripts
+## Home Page
 
-In the project directory, you can run:
+Home Page - Intro (Where, who, call to action)
+Rebekah Marvin
 
-### `yarn start`
+pictures ? DSC_0195 - DSC_200
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Plato Quote - 
+“I would teach children music, physics, and philosophy;
+ but most importantly music, for the patterns in music
+ and all the arts are the keys to learning”
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+― Plato
 
-### `yarn test`
+## About
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+About Me - Bio, Teaching experience, Gig experience
 
-### `yarn build`
+Testimonials
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lessons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Lessons - Business Email 
+    Technique
+    Reading Music
+    Musicality/Chords and Scales
+    Accessible (Skill levels and Ages)
+Studio Policy - 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Compositions
+https://www.youtube.com/watch?v=-4Qk6Sbn8ho
+## Performances
+https://www.youtube.com/watch?v=rNJD26qj3zg
+https://www.youtube.com/watch?v=H-KXQ-D4dbw
+https://www.youtube.com/watch?v=v4DjvlIxnAw
+## Events (Future Idea)
 
-### `yarn eject`
+Upcoming Events -
+    - Studio Events
+    - Performance
+Previous Events - 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contact form for email
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### MISC
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# to DO
+Make intro header linkable to relevant area on page
+Make slide more responsive
+Social media links: Facebook and Insta
 
-## Learn More
+FaceBook Profile
+FB Ads
+Google Profile
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Different Screen Sizes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+< 1280px wide (small laptop/tablet) width needs some optimizations
+
+< 420px-320px wide (phone) needs entire new look, move navbar to a drop down
+
+# Lessons pictures I like
+
+0156 - Tech
+0163 - Tech
+0164 - Tech <3
+0168 - Tech
+0170 - Tech
+0179 - Tech/Musicality like
+0182 - Sheet like
+0191 - no
+0194 - no
+0198 - Sheet/Musicality like
+0201 - Musicality
+0208 - Tech
+0213 - Tech/Music
