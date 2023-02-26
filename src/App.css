@@ -2162,6 +2162,10 @@ textarea {
     border-bottom-left-radius: 10px;
   }
 
+  .Intro-wrapper {
+    background-image: url(../public/Performances-lite.webp);
+  }
+
   .About {
     display: block;
     justify-items: center;
@@ -2368,6 +2372,7 @@ textarea {
   }
 
   #compositions-image {
+    content: url(../public/hshot6blackedit-lite.webp);
     transform: scale(1.5);
   }
 
@@ -2439,6 +2444,7 @@ textarea {
   }
 
   #Performances-image {
+    content: url(../public/Performances-lite.webp);
     transform: scale(2);
   }
 
