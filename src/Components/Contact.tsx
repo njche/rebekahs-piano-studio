@@ -89,6 +89,7 @@ function Contact() {
                     <button id="submit" onClick={handleSubmit}>Send Message</button>
                 </div>
             </div>
+            Links
         </div>
     )
 }
