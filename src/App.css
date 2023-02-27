@@ -1967,9 +1967,6 @@ textarea {
 }
 
 @media only screen and (max-width: 1024px) {
-  .Intro-wrapper {
-    background-image: url(../public/Performances-tablet.webp);
-  }
 
   .Composition-bio {
     position: absolute;
