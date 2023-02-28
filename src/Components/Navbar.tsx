@@ -13,10 +13,10 @@ function Navbar() {
                 <FaRegArrowAltCircleDown className={active ? "arrow active" : "arrow"} size="25px"/>
             </div>
             <div className={active ? "Navbar-menu active" : "Navbar-menu"}>
-                    <Link className="Link" id="Link-1" to="About" smooth={true} offset={-50} duration={500}>
+                    <Link className="Link" id="Link-1" to="About" smooth={true} offset={-75} duration={500}>
                         About
                     </Link> 
-                    <Link className="Link" id="Link-2" to="Teaching-philosophy" smooth={true} offset={-50} duration={500}>
+                    <Link className="Link" id="Link-2" to="Teaching-philosophy" smooth={true} offset={-75} duration={500}>
                         Teaching
                     </Link>
                     <Link className="Link" id="Link-3"  to="Lessons" smooth={true} offset={50} duration={500}>
@@ -25,7 +25,7 @@ function Navbar() {
                     <Link className="Link" id="Link-4"  to="Compositions" smooth={true} offset={-100} duration={500}>
                         Composition
                     </Link> 
-                    <Link className="Link" id="Link-5"  to="Performances" smooth={true} offset={-100} duration={500}>
+                    <Link className="Link" id="Link-5"  to="Performances" smooth={true} offset={-40} duration={500}>
                         Performance
                     </Link> 
                     <Link className="Link" id="Link-6"  to="Contact" smooth={true} offset={-100} duration={500}>

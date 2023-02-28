@@ -83,6 +83,9 @@ function Lessons() {
         <link rel="preload" as="image" href="Tech.webp" type="image/webp"/>
         <link rel="preload" as="image" href="Sheet.webp" type="image/webp"/>
         <link rel="preload" as="image" href="Musicality.webp" type="image/webp"/>
+        <link rel="preload" as="image" href="Tech-lite.webp" type="image/webp"/>
+        <link rel="preload" as="image" href="Sheet-lite.webp" type="image/webp"/>
+        <link rel="preload" as="image" href="Musicality-lite.webp" type="image/webp"/>
             <div className="Lessons-wrapper">
                 <Quote />
                 <div className="Lessons-grid-1" id="Lessons">

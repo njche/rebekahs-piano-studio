@@ -87,9 +87,20 @@ function Contact() {
                     <Modal open={modalOpen} success={modalSuccess} completed={modalUserCompleted} />
                     <textarea id="message" placeholder="Write your message here." />
                     <button id="submit" onClick={handleSubmit}>Send Message</button>
+                    <div className="Contact-footer">
+                        <div>
+                            <a href="https://www.instagram.com/rebekahmarvin12/" target="_blank" rel="noreferrer">
+                                <img src="instagram.webp" alt="" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/marvinpianostudio" target="_blank" rel="noreferrer">
+                                <img src="facebook.webp" alt="" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            Links
         </div>
     )
 }
