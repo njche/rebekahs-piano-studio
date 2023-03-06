@@ -92,6 +92,13 @@ function Lessons() {
                     <h1 className="Lessons-header">
                         Lessons
                     </h1>
+                    <h2 className="Lessons-header-2">
+                        What to expect: 
+                        <br />
+                        <p className="Lessons-header-2-text">
+                            Lessons are 30 minutes weekly. Scroll through the pictures below to see various aspects that are included in all lessons.
+                        </p>
+                    </h2>
                     {
                         window.innerWidth <= 750 ?
                         <div className="Lessons-slide-wrapper">

@@ -45,7 +45,7 @@ function Contact() {
             xhr.onerror = () => {
                 alert('error')
             }
-            xhr.open('POST', 'http://localhost:8000/')
+            xhr.open('POST', String(process.env.REACT_APP_ADDRESS))
             xhr.setRequestHeader('content-type', 'application/json')
             xhr.onload = () => {
                 if (xhr.responseText === 'success') {
