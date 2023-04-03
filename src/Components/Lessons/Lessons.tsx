@@ -7,7 +7,7 @@ function Lessons() {
         'Tech.webp',
         'Sheet.webp',
         'Musicality.webp',
-        'Sheet.webp',
+        'Teach.webp',
     ]
 
     const texts = [
@@ -17,6 +17,12 @@ function Lessons() {
         'Did you know even 3 or 4 year olds can play piano? Introducing piano at this age is more about playing musical games – children this young don’t even know they’re “learning”. The first 6 years of a child’s life are the most important in terms of learning – don’t hesitate to start your young child on piano! Parental involvement is key. I accept students starting as young as 3 years old, based on a meeting with them and their parents.'
     ]
 
+    const alts = [
+        'Pianist playing chords on a piano',
+        'A musician looking at sheet music on a piano',
+        'A note being held down on a piano by pianist',
+        'A music teacher teaching a young child how to play piano with a smile'
+    ]
     
     const highlightedBackground = {
         outline: '1px solid rgba(55, 119, 172, 0.6)',
@@ -103,19 +109,19 @@ function Lessons() {
                         window.innerWidth <= 750 ?
                         <div className="Lessons-slide-wrapper">
                             <div className='Lessons-slide-grid'> 
-                                <img className='Lessons-slide-pictures' src={`${images[0]}`} srcSet="Tech-lite.webp" loading="lazy" width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[0]}`} srcSet="Tech-lite.webp" loading="lazy" width="100%" height="auto" alt="Pianist playing chords on a piano" />
                                 <div className={'Lessons-slide-text-0'}>
                                     {texts[0]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[1]}`} srcSet="Sheet-lite.webp" loading="lazy" width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[1]}`} srcSet="Sheet-lite.webp" loading="lazy" width="100%" height="auto" alt="A musician looking at sheet music on a piano" />
                                 <div className={'Lessons-slide-text-1'}>
                                     {texts[1]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[2]}`} srcSet="Musicality-lite.webp" loading="lazy" width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[2]}`} srcSet="Musicality-lite.webp" loading="lazy" width="100%" height="auto" alt="A note being held down on a piano by pianist" />
                                 <div className={'Lessons-slide-text-2'}>
                                     {texts[2]}
                                 </div>
-                                <img className='Lessons-slide-pictures' src={`${images[3]}`} srcSet="Sheet-lite.webp" loading="lazy" width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[3]}`} srcSet="Teach-lite.webp" loading="lazy" width="100%" height="auto" alt="A music teacher teaching a young child how to play piano with a smile" />
                                 <div className={'Lessons-slide-text-3'}>
                                     {texts[3]}
                                 </div>
@@ -127,7 +133,7 @@ function Lessons() {
                             <div className='button-prev'></div>
                             </div>
                             <div className='Lessons-slide-grid'> 
-                                <img className='Lessons-slide-pictures' src={`${images[currentIndex]}`} loading="lazy" width="100%" height="auto" alt="Slide" />
+                                <img className='Lessons-slide-pictures' src={`${images[currentIndex]}`} loading="lazy" width="100%" height="auto" alt={alts[currentIndex]} />
                                 <div className={'Lessons-slide-text-' + currentIndex}>
                                     {texts[currentIndex]}
                                 </div>

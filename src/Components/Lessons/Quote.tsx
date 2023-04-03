@@ -7,7 +7,7 @@ function Quote() {
                     <h1 className="Teaching-header">
                         Teaching Philosophy
                     </h1>
-                    <img className="plato-pic" alt="plato"></img>
+                    <img className="plato-pic" alt="statue of plato" />
                     <div className="quote-words">
                         <p className="quotations-1">“</p>
                         <p className="quote-text">

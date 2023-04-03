@@ -90,12 +90,12 @@ function Contact() {
                     <div className="Contact-footer">
                         <div>
                             <a href="https://www.instagram.com/rebekahmarvin12/" target="_blank" rel="noreferrer">
-                                <img src="instagram.webp" alt="" />
+                                <img src="instagram.webp" alt="instagram.com" />
                             </a>
                         </div>
                         <div>
                             <a href="https://www.facebook.com/marvinpianostudio" target="_blank" rel="noreferrer">
-                                <img src="facebook.webp" alt="" />
+                                <img src="facebook.webp" alt="facebook.com" />
                             </a>
                         </div>
                     </div>

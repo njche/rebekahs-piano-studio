@@ -1,7 +1,7 @@
 function About() {
     return (
         <div className="About" id="About">
-            <img className="About-image"></img>
+            <img className="About-image" alt="Rebekah standing in front of a waterfall in the forest" />
                 <div className="About-bio">
                     <h1 className="About-header">About Me</h1>
                     <p>
