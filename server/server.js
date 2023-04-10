@@ -13,16 +13,12 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')
-    console.log(res.body)
-})
-
 app.post('/', (req, res) => {
     console.log(req.body)
-
+    
     const transporter = nodemailer.createTransport({
         service: 'gmail',
+        port: PORT,
         auth: {
             user: process.env.EMAIL,
             pass: process.env.EMAIL_PW

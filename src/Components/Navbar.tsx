@@ -28,7 +28,7 @@ function Navbar() {
                     <Link className="Link" id="Link-5"  to="Performances" smooth={true} offset={-40} duration={500}>
                         Performance
                     </Link> 
-                    <Link className="Link" id="Link-6"  to="Contact" smooth={true} offset={-100} duration={500}>
+                    <Link className="Link" id="Link-6"  to="Contact" smooth={true} offset={50} duration={500}>
                         Contact
                     </Link>
                 </div>
