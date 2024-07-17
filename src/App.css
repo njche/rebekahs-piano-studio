@@ -923,16 +923,30 @@ a:visited {
   z-index: 1;
 }
 
-.Performances-bio {
-  z-index: 2;
+.Performances-flex {
+  height: calc(100% - 250px);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
   position: absolute;
+  bottom: 0;
+}
+
+.Performances-bio {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
   padding: 2%;
-  max-width: 42%;
-  min-width: 42%;
-  height: 100%;
-  margin-top: -56%;
-  margin-left: 5%;
+  width: 100%;
+  height: 90%;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.Performances-video-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Performances-header {
@@ -954,31 +968,23 @@ a:visited {
 }
 
 .Performances-bio-text {
-  position: absolute;
+  height: fit-content;
+  width: 50%;
   z-index: 3;
   text-align: left;
   padding: 2%;
-  width: 25%;
+  margin-top: 4%;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
   font-weight: 400;
   border-radius: 5px;
   background-color: #00000091;
   outline: 1px solid rgba(88, 88, 88, 0.15);
-  margin-left: 60%;
-  margin-top: -48.5%;
 }
 
-.Performances-video-1 {
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: -5%;
-  padding: 2%;
-  background-color: #00000091;
-  outline: 1px solid rgba(88, 88, 88, 0.15);
-}
-
-.Performances-video-2 {
+.Performances-video {
+  width: 61.8%;
+  height: 100%;
   border-radius: 5px;
   position: relative;
   padding: 2%;
@@ -989,8 +995,7 @@ a:visited {
 .Performances-video-title {
   color: rgba(255, 255, 255, 0.9);
   font: 1.2em 'Cormorant SC';
-  margin-top: 12%;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
 
 .Contact {
@@ -1464,10 +1469,8 @@ textarea {
     transform: scale(1, -1);
   }
   
-  .Performances-bio-text {
-    width: 35%;
-    margin-left: 55%;
-    margin-top: -48.5%;
+  .Performances-bio {
+    height: 85%;
   }
 }
 
@@ -1670,10 +1673,8 @@ textarea {
     transform: scale(.85);
   }
 
-  .Performances-bio-text {
-    width: 40%;
-    margin-left: 50%;
-    margin-top: -48.5%;
+  .Performances-bio {
+    height: 80%;
   }
 }
 @media only screen and (max-width: 1359px) {
@@ -1758,6 +1759,10 @@ textarea {
     margin-top: 4%;
     justify-self: center;
     overflow: visible;
+  }
+
+  .Performances-bio-text {
+    width: 60%;
   }
 }
 
@@ -1872,18 +1877,40 @@ textarea {
     outline: 1px solid rgba(0, 0, 0, 0.15);
   }
 
-  .Performances-bio-text {
-    width: 45%;
-    margin-left: 45%;
-    margin-top: -48.5%;
+  .Performances-flex {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    top: 0;
+    bottom: none;
+    margin-top: 175px;
+  }
+
+  .Performances-image {
+    height: 200%;
   }
 
   .Performances-bio {
-    margin-left: 0%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
   }
 
-  .Performances-header {
-    margin-top: 0%;
+  .Performances-bio-text {
+    width: 90%;
+  }
+
+  .Performances-bio div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Performances-bio iframe {
+    height: 100%;
   }
 }
 
@@ -1986,12 +2013,6 @@ textarea {
     filter: opacity(1);
   }
 
-  .Performances-bio-text {
-    font-size: .9rem;
-    width: 40%;
-    margin-left: 50%;
-    margin-top: -48.5%;
-  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -2008,20 +2029,19 @@ textarea {
     padding-right: 30%;
   }
 
-  .Performances-bio {
-    margin-left: -3%;
-    transform: scale(.9);
-  }
-
   .Performances-bio-text {
     font-size: .9rem;
-    width: 50%;
-    margin-left: 40%;
-    margin-top: -48.5%;
+    width: 100%;
   }
 
-  .Performances-header {
-    margin-top: -1%;
+  .Performances-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 200px;
+  }
+
+  .Performances-bio {
+    flex-direction: column;
   }
 }
 
@@ -2087,36 +2107,14 @@ textarea {
     padding-right: 35%;
   }
 
-  .Performances-header {
-    margin-top: 0%;
-    font-size: 7rem;
-  }
-
-  .Performances-bio-text {
-    margin-top: -52%;
+  .Performances-flex {
+    margin-top: 175px;
   }
 
   .Performances-video-title {
-    font-size: 1rem;
-  }
-
-  .Performances-video-1 {
-    border-radius: 5px;
-    position: relative;
-    margin-bottom: -5%;
-    padding: 2%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    background-color: #00000091;
-    outline: 1px solid rgba(88, 88, 88, 0.15);
-  }
-  
-  .Performances-video-2 {
-    border-radius: 5px;
-    position: relative;
-    padding: 2%;
-    background-color: #00000091;
-    outline: 1px solid rgba(88, 88, 88, 0.15);
+    margin-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -2511,70 +2509,6 @@ textarea {
   #Performances-image {
     transform: scale(2);
   }
-
-  .Performances-bio {
-    justify-self: center;
-    display: block;
-    z-index: 2;
-    padding: 2%;
-    max-width: 42%;
-    min-width: 42%;
-    height: 100%;
-    margin-top: 32%;
-    margin-left: 0%;
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  .Performances-bio-text {
-    min-width: 90%;
-    margin: 0%;
-    margin-top: 17.5%;
-    justify-self: center;
-  }
-
-  #performance-1 {
-    position: absolute;
-    margin-top: 47%;
-    margin-left: -63%;
-    width: 100%;
-  }
-
-  #performance-2 {
-    position: absolute;
-    margin-top: 47%;
-    margin-left: 52%;
-    width: 100%;
-  }
-
-  .Performances-video-1 {
-    border-radius: 5px;
-    position: absolute;
-    width: 80%;
-    height: 15%;
-    margin-top: 55%;
-    margin-left: -100%;
-    padding: 2%;
-    background-color: #00000091;
-    outline: 1px solid rgba(88, 88, 88, 0.15);
-  }
-  
-  .Performances-video-2 {
-    border-radius: 5px;
-    position: absolute;
-    width: 80%;
-    height: 15%;
-    margin-top: 55%;
-    margin-left: 15%;
-    padding: 2%;
-    background-color: #00000091;
-    outline: 1px solid rgba(88, 88, 88, 0.15);
-  }
-
-  /*
-    PICTURES ON LESSONS SLIDES MOVE PAGE BY 1 PX
-    MAKE SURE EVERY PICTURE IS SAME RES
-  */
-
 }
 
 @media only screen and (max-width: 906px) {
@@ -2599,42 +2533,18 @@ textarea {
     margin-bottom: 10%;
   }
 
-  .Performances-header {
-    margin-top: 2%;
-  }
-
-  .Performances-bio-text {
-    min-width: 90%;
-    margin: 0%;
-    margin-top: 20%;
-    justify-self: center;
-  }
-
   .Performances-wrapper {
     margin-top: -6%;
     margin-bottom: 50%;
   }
 
-  #performance-1 {
-    position: absolute;
-    margin-top: 77%;
-    margin-left: -63%;
-    width: 100%;
+  .Performances-flex {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  #performance-2 {
-    position: absolute;
-    margin-top: 77%;
-    margin-left: 52%;
-    width: 100%;
-  }
-
-  .Performances-video-1 {
-    margin-top: 85%;
-  }
-  
-  .Performances-video-2 {
-    margin-top: 85%;
+  .Performances-bio-text {
+    width: 90%;
   }
 
 }
@@ -2673,18 +2583,8 @@ textarea {
     height: 90%;
   }
 
-  #performance-2 {
-    margin-top: 72%;
-  }
-}
-
-@media only screen and (max-width: 772px) {
-  .Performances-bio-text {
-    margin-top: 22%;
-  }
-
-  .Performances-bio {
-    margin-block-start: 300px;
+  .Performances-flex {
+    flex-direction: row;
   }
 }
 
@@ -2775,58 +2675,6 @@ textarea {
     transform: scale(3);
     margin-top: 20%;
   }
-
-  .Performances-header {
-    margin-top: 5%;
-  }
-  
-  .Performances-bio {
-    display: grid;
-    justify-self: left;
-    justify-items: center;
-    margin-top: 20%;
-    grid-template-rows: 7% 15% 10% 15%;
-  }
-
-  .Performances-bio-text {
-    min-width: 40%;
-    width: 50%;
-    justify-self: right;
-    margin-right: 2%;
-    margin-top: 30%;
-  }
-
-  #performance-1 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    margin-top: 10%;
-    left: 0;
-    right: 0;
-  }
-
-  #performance-2 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    left: 0;
-    right: 0;
-    margin-block-start: 20%;
-  }
-
-  .Performances-video-1 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-  }
-
-  .Performances-video-2 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-  }
 }
 
 @media only screen and (max-width: 709px) {
@@ -2857,10 +2705,7 @@ textarea {
 }
 
 @media only screen and (max-width: 667px) {
-  .Contact {
-    position: relative;
-    margin-block-start: 45%;
-  }
+  
 }
 
 @media only screen and (max-width: 650px) {
@@ -2903,12 +2748,13 @@ textarea {
     margin-top: 2%
   }
 
-  .Performances-bio-text {
-    margin-top: 35%;
+  .Performances-flex {
+    flex-direction: column-reverse;
   }
 
-  .Performances-bio {
-    margin-top: 30%;
+  .Contact {
+    position: relative;
+    margin-block-start: 45%;
   }
 }
 
@@ -2970,6 +2816,14 @@ textarea {
   .Performances-wrapper {
     margin-top: 10%;
   }
+  .Performances-bio-text {
+    margin-top: 8%;
+  }
+
+  .Performances-video-title {
+    padding: 0;
+    margin-bottom: 10px;
+  }
 
   #Performances-image {
     transform: scale(3);
@@ -2980,63 +2834,8 @@ textarea {
     margin-top: 10%;
   }
   
-  .Performances-bio {
-    display: grid;
-    justify-self: left;
-    justify-items: center;
-    margin-top: 50%;
-    grid-template-rows: 7% 15% 10% 15%;
-  }
-
-  .Performances-bio-text {
-    min-width: 40%;
-    width: 50%;
-    justify-self: right;
-    margin-right: 2%;
-    margin-top: 40%;
-  }
-
-  .Performances-video-title {
-    position: relative;
-    margin: 0%;
-  }
-
-  #performance-1 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    margin-top: 10%;
-    left: 0;
-    right: 0;
-  }
-
-  #performance-2 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    margin-top: 0%;
-    left: 0;
-    right: 0;
-    margin-block-start: 65%;
-  }
-
-  .Performances-video-1 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-  }
-
-  .Performances-video-2 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-    margin-block-start: 50%;
-  }
-
   .Contact {
-    margin-block-start: 55%;
+    margin-block-start: 60%;
   }
 }
 
@@ -3045,64 +2844,9 @@ textarea {
     transform: scale(3);
     margin-top: 20%;
   }
-  
-  .Performances-bio {
-    display: grid;
-    justify-self: left;
-    justify-items: center;
-    margin-top: 50%;
-    grid-template-rows: 7% 15% 10% 15%;
-  }
-
-  .Performances-bio-text {
-    min-width: 40%;
-    width: 50%;
-    justify-self: right;
-    margin-right: 2%;
-  }
-
-  .Performances-video-title {
-    position: relative;
-    margin: 0%;
-  }
-
-  #performance-1 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    margin-top: 0%;
-    left: 0;
-    right: 0;
-  }
-
-  #performance-2 {
-    position: relative;
-    text-align: center;
-    height: fit-content;
-    margin-left: 0%;
-    margin-top: 0%;
-    left: 0;
-    right: 0;
-    margin-block-start: 62%;
-  }
-
-  .Performances-video-1 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-  }
-
-  .Performances-video-2 {
-    position: relative;
-    margin: 0;
-    height: 100%;
-    margin-block-start: 50%;
-  }
-
 }
 
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 535px) {
   .quote-words {
     margin-top: -15%;
   }
@@ -3123,42 +2867,6 @@ textarea {
     margin-top: 49%;
     transform: scale(4);
   }
-
-  .Performances-bio-text {
-    justify-self: center;
-    min-width: 50%;
-    width: 80%;
-  }
-
-  .Performances-bio {
-    display: grid;
-    justify-self: center;
-    justify-items: center;
-    margin-top: 145%;
-    grid-template-rows: 7% 10% 7% 10%;
-  }
-
-  #performance-1 {
-    margin-block-start: 10%;
-  }
-
-  .Performances-video-1 {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    background-color: transparent;
-  }
-
-  .Performances-video-2 {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    background-color: transparent;
-  }
-
-  .Contact {
-    margin-top: 107%;
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -3177,14 +2885,6 @@ textarea {
 
   #composition-2 {
     margin-top: -8%;
-  }
-  
-  .Performances-bio {
-    margin-top: 160%;
-  }
-
-  #performance-2 {
-    margin-block-start: 50%;
   }
 }
 
@@ -3211,6 +2911,10 @@ textarea {
     width: 100%;
     border: 0px;
     padding: 0%;
+  }
+
+  .Contact {
+    margin-block-start: 100%;
   }
 }
 
@@ -3249,27 +2953,6 @@ textarea {
     margin-top: 25%;
   }
 
-  #performance-1 {
-    margin-top: 10%;
-  }
-}
-
-@media only screen and (max-width: 443px) {
-  .Performances-bio {
-    margin-top: 175%;
-  }
-
-  #Performances-image {
-    margin-top: 49%;
-  }
-
-  #performance-2 {
-    margin-block-start: 20%;
-  }
-
-  .Performances-video-2 {
-    margin-top: 20%;
-  }
 }
 
 @media only screen and (max-width: 437px) {
@@ -3311,9 +2994,12 @@ textarea {
     font-size: 5rem;
   }
 
-  .Performances-bio-text {
-    margin-right: 0%;
-    margin-top: 30%;
+  .Performances-flex {
+    margin-top: 100px;
+  }
+
+  .Contact {
+    margin-block-start: 107%;
   }
 }
 
@@ -3332,42 +3018,6 @@ textarea {
   .plato {
     margin-top: 25%;
   }
-
-  .Performances-bio-text {
-    border-radius: 0px;
-    width: 96%;
-    outline: none;
-  }
-
-  .Performances-bio {
-    margin-top: 180%;
-    justify-self: center;
-    width: 100%;
-    grid-template-columns: 60% 120%;
-    grid-template-rows: 12% 12%;
-    column-gap: 25%;
-    margin-left: -50%;
-  }
-
-  .Performances-video-1 {
-    padding: 6%;
-  }
-
-  .Performances-video-2 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    padding: 6%;
-  }
-
-  #performance-1 {
-    margin-top: 35%;
-  }
-
-  #performance-2 {
-    margin-top: 55%;
-    grid-row-start: 2;
-    grid-column-start: 1;
-  }
 }
 
 @media only screen and (max-width: 391px) {
@@ -3382,6 +3032,15 @@ textarea {
 
   .Composition-bio-text {
     margin-bottom: -25%;
+  }
+
+  #Performances-image {
+    margin-top: 49%;
+    transform: scale(4.5);
+  }
+
+  .Contact {
+    margin-block-start: 120%;
   }
 }
 
@@ -3429,6 +3088,10 @@ textarea {
     font-size: .85rem;
     margin-bottom: -40%;
   }
+
+  .Performances-bio iframe {
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -3442,34 +3105,14 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 344px) {
-  .Performances-bio {
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 10% 10%;
-    margin-top: 195%;
-  }
-
-  .Performances-bio-text {
-    margin-top: 35%;
-    min-width: 0px;
-  }
-
-  #performance-1 {
-    margin-top: 20%;
-  }
-
-  #performance-2 {
-    margin-top: 25%;
-  }
-}
 
 @media only screen and (max-width: 336px) {
   .Teaching-header {
     font-size: 2.5rem;
   }
 
-  .Performances-bio {
-    margin-top: 200%;
+  .Performances-bio iframe {
+    height: 75px;
   }
 }
 
@@ -3498,8 +3141,8 @@ textarea {
     top: 8%;
   }
 
-  .Performances-bio {
-    margin-top: 203%;
+  .Performances-video-title {
+    font-size: .9rem;
   }
 }
 

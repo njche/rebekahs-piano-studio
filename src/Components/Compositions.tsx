@@ -15,7 +15,7 @@ function Compositions() {
                             I’ve been composing since I was a child. I started by writing dozens of hymn arrangements to play at my church, then over time branched out into writing for ensembles. I mostly compose for piano – both original works and arrangements of existing songs. Much of my music is inspired by nature.
                             <br />
                             <br />
-                            Currently I am working on my first album of piano solos, which will be released summer 2023. You can check out recordings below and on my YouTube channel.
+                            Currently I am working on my first album of piano solos. You can check out recordings below and on my YouTube channel.
                         </div>
                         <p className="Composition-video-title" id="composition-1">Sonata No. 1</p>
                         <iframe className="Composition-video-1" width="56.5%" height="20%" src="https://www.youtube.com/embed/-4Qk6Sbn8ho?rel=0&amp;showinfo=0&amp;rel=0" title="Sonata no.1 - Rebekah Shomsky" frameBorder="0" allow="fullscreen"></iframe>
